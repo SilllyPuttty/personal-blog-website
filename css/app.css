@@ -1,3 +1,211 @@
-body {
-    background-color:
-}
+/* Background */
+    html {
+        background: #000;
+    }
+
+/* Components */
+    .line-break-large {
+        width: 1140px;
+        height: 0.5px;
+        background: #757575;
+    }
+
+    .line-break-small {
+        width: 540px;
+        height: 0.5px;
+        background: #757575;
+    }
+
+    button {
+        height: 48px;
+        border: 1px solid rgb(255, 255, 255);
+        background: black;
+        padding: 8px 40px;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        display: inline-block;
+    }
+
+/* Typography */
+    h1 {
+        height: 64px;
+        color: rgb(149, 71, 255);
+        font-size: 56px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        line-height: 64px;
+    }
+
+    h2 {
+        height: 24px;
+        color: rgb(149, 71, 255);
+        font-size: 24px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    h3 {
+        height: 32px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 32px;
+    }
+
+    h4 {
+        height: 32px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 32px; 
+    }
+
+    h5{
+        height: 24px;
+        color: #757575;
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+        font-weight: normal;
+        line-height: 24px;  
+    }
+
+    h6 {
+        height: 24px;
+        color: rgb(127, 57, 251);
+        font-size: 12px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    p {
+        height: 24px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+        font-weight: normal;
+        line-height: 24px;
+    }
+
+    .text-blog-header {
+        height: 48px;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family: OpenSans-Bold;
+        font-weight: bold;
+        letter-spacing: -1.67px;
+        line-height: 48px;
+    }
+
+    .text-blog-author {
+        height: 16px;
+        color: rgb(149, 71, 255);
+        font-size: 18px;
+        font-family: OpenSans-Bold;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+    .text-blog-subheader {
+        height: 32px;
+        color: #757575;
+        font-size: 20px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 32px;
+    }
+
+    .text-blog-more {
+        height: 32px;
+        color: rgb(149, 71, 255);
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 32px;
+    }
+
+    .text-blog-description-primary {
+        height: 24px;
+        color: rgb(149, 71, 255);
+        font-size: 14px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 24px;
+    }
+
+    .text-blog-description-secondary {
+        height: 24px;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 24px;
+    }
+
+    .text-blog-bio {
+        width: 85px;
+        height: 24px;
+        color: #757575;
+        font-size: 12px;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 24px;
+    }
+
+    .text-body-primary {
+        height: 16px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+    .text-body-secondary {
+        height: 16px;
+        color: #757575;
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+    .text-body-emphasis {
+        height: 16px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: underline;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+    .text-navigation {
+        height: 16px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: 'Merriweather', serif;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+/* Lists */
+    ul {
+     margin-bottom: 6em;
+     list-style: none;
+    }
