@@ -28,6 +28,12 @@
         display: inline-block;
     }
 
+    .nav-li {
+        display: inline-block;
+    }
+
+
+
 /* Typography */
     h1 {
         height: 64px;
