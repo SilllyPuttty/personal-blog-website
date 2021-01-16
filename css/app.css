@@ -1,40 +1,65 @@
-/* Background */
-    html {
-        background: #000;
+    /* Tutorial */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background: #000000;
     }
 
-/* Components */
-    .line-break-large {
-        width: 1140px;
-        height: 0.5px;
-        background: #757575;
+    li, a, button {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color:rgb(255, 255, 255)
     }
 
-    .line-break-small {
-        width: 540px;
-        height: 0.5px;
-        background: #757575;
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* TODO: Research shorthand for padding */
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0px 24px;
+    }
+
+    .nav-links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav-links li a:hover {
+        color: rgb(149, 71, 255);
     }
 
     button {
-        height: 48px;
-        border: 1px solid rgb(255, 255, 255);
-        background: black;
-        padding: 8px 40px;
-        color: #fff;
-        font-size: 18px;
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        display: inline-block;
+        margin-left: 2em;
+        padding: 0.5em 2em;
+        background-color: rgb(0, 0, 0);
+        border-color:rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
     }
 
-    .nav-li {
-        display: inline-block;
+    button:hover {
+        background-color: rgb(43, 43, 43);
     }
 
-
-
-/* Typography */
+    /* Typography */
     h1 {
         height: 64px;
         color: rgb(149, 71, 255);
@@ -104,7 +129,7 @@
         height: 48px;
         color: rgb(255, 255, 255);
         font-size: 40px;
-        font-family: OpenSans-Bold;
+        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         letter-spacing: -1.67px;
         line-height: 48px;
@@ -114,7 +139,7 @@
         height: 16px;
         color: rgb(149, 71, 255);
         font-size: 18px;
-        font-family: OpenSans-Bold;
+        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         letter-spacing: 0px;
         line-height: 16px;
@@ -201,17 +226,15 @@
         line-height: 16px;
     }
 
-    .text-navigation {
-        height: 16px;
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        font-family: 'Merriweather', serif;
-        letter-spacing: 0px;
-        line-height: 16px;
+    /* Components */
+    .line-break-large {
+        width: 1140px;
+        height: 0.5px;
+        background: #757575;
     }
 
-/* Lists */
-    ul {
-     margin-bottom: 6em;
-     list-style: none;
+    .line-break-small {
+        width: 540px;
+        height: 0.5px;
+        background: #757575;
     }
