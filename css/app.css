@@ -1,240 +1,89 @@
-    /* Tutorial */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        background: #000000;
-    }
 
-    li, a, button {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        color:rgb(255, 255, 255)
-    }
+/* Grid Settings */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "main main main main"
+        "sidebar article1 article1 article1"
+        "sidebar article2 article2 article2"
+        "sidebar article3 article3 article3"
+        "ft ft ft ft";
+}
 
-    header {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        /* TODO: Research shorthand for padding */
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+/* Text Styling */
+li, a, button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
 
-    .logo {
-        cursor: pointer;
-        margin-right: auto;
-    }
+/* Component Styling */
+.cta {
+    margin-left: 2em;
+    padding: 0.5em 2em;
+    background-color: rgb(0, 0, 0);
+    border-color:rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
 
-    .nav-links {
-        list-style: none;
-    }
+nav {
+    background-color: rosybrown;
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    .nav-links li {
-        display: inline-block;
-        padding: 0px 24px;
-    }
+}
 
-    .nav-links li a {
-        transition: all 0.3s ease 0s;
-    }
+.nav-links {
+    list-style: none;
+}
 
-    .nav-links li a:hover {
-        color: rgb(149, 71, 255);
-    }
+.nav-links li {
+    display: inline-block;
+    padding: 0px 24px;
+}
 
-    button {
-        margin-left: 2em;
-        padding: 0.5em 2em;
-        background-color: rgb(0, 0, 0);
-        border-color:rgb(255, 255, 255);
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-    }
+.logo {
+    margin-right: auto;
+}
 
-    button:hover {
-        background-color: rgb(43, 43, 43);
-    }
+main {
+    background-color: royalblue;
+    grid-area: main;
+}
 
-    /* Typography */
-    h1 {
-        height: 64px;
-        color: rgb(149, 71, 255);
-        font-size: 56px;
-        font-family: 'Merriweather', serif;
-        font-weight: 900;
-        line-height: 64px;
-    }
+#sidebar {
+    background-color: salmon;
+    grid-area: sidebar;
+}
 
-    h2 {
-        height: 24px;
-        color: rgb(149, 71, 255);
-        font-size: 24px;
-        font-family: 'Merriweather', serif;
-        font-weight: 900;
-        line-height: 24px;
-    }
+#article1 {
+    background-color: sandybrown;
+    grid-area: article1;
+}
 
-    h3 {
-        height: 32px;
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 32px;
-    }
+#article2 {
+    background-color: seagreen;
+    grid-area: article2;
+}
 
-    h4 {
-        height: 32px;
-        color: rgb(255, 255, 255);
-        font-size: 18px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 32px; 
-    }
+#article3 {
+    background-color: sienna;
+    grid-area: article3;
+}
 
-    h5{
-        height: 24px;
-        color: #757575;
-        font-size: 16px;
-        font-family: 'Merriweather', serif;
-        font-weight: normal;
-        line-height: 24px;  
-    }
-
-    h6 {
-        height: 24px;
-        color: rgb(127, 57, 251);
-        font-size: 12px;
-        font-family: 'Merriweather', serif;
-        font-weight: 900;
-        line-height: 24px;
-    }
-
-    p {
-        height: 24px;
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        font-family: 'Merriweather', serif;
-        font-weight: normal;
-        line-height: 24px;
-    }
-
-    .text-blog-header {
-        height: 48px;
-        color: rgb(255, 255, 255);
-        font-size: 40px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        letter-spacing: -1.67px;
-        line-height: 48px;
-    }
-
-    .text-blog-author {
-        height: 16px;
-        color: rgb(149, 71, 255);
-        font-size: 18px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 16px;
-    }
-
-    .text-blog-subheader {
-        height: 32px;
-        color: #757575;
-        font-size: 20px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 32px;
-    }
-
-    .text-blog-more {
-        height: 32px;
-        color: rgb(149, 71, 255);
-        font-size: 18px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 32px;
-    }
-
-    .text-blog-description-primary {
-        height: 24px;
-        color: rgb(149, 71, 255);
-        font-size: 14px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 24px;
-    }
-
-    .text-blog-description-secondary {
-        height: 24px;
-        color: #fff;
-        font-size: 14px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 24px;
-    }
-
-    .text-blog-bio {
-        width: 85px;
-        height: 24px;
-        color: #757575;
-        font-size: 12px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        letter-spacing: 0px;
-        line-height: 24px;
-    }
-
-    .text-body-primary {
-        height: 16px;
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: normal;
-        letter-spacing: 0px;
-        line-height: 16px;
-    }
-
-    .text-body-secondary {
-        height: 16px;
-        color: #757575;
-        font-size: 11px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0px;
-        line-height: 16px;
-    }
-
-    .text-body-emphasis {
-        height: 16px;
-        color: rgb(255, 255, 255);
-        font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
-        text-decoration: underline;
-        letter-spacing: 0px;
-        line-height: 16px;
-    }
-
-    /* Components */
-    .line-break-large {
-        width: 1140px;
-        height: 0.5px;
-        background: #757575;
-    }
-
-    .line-break-small {
-        width: 540px;
-        height: 0.5px;
-        background: #757575;
-    }
+footer {
+    background-color: skyblue;
+    grid-area: ft;
+}    
