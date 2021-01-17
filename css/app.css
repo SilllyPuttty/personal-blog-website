@@ -58,8 +58,70 @@
         font-size: 16px;
         color:rgb(255, 255, 255);
         text-decoration: none;
-        list-style: none;
     }
+
+    h1 {
+        color: rgb(149, 71, 255);
+        font-size: 56px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        line-height: 64px;
+    }
+
+    h2 {
+        color: rgb(149, 71, 255);
+        font-size: 24px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    h3 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: 'Merriweather', serif;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    h5 {
+        color: #757575;
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+        font-weight: normal;
+    }
+
+    h6 {
+        color: rgb(127, 57, 251);
+        font-size: 12px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    .text-body-emphasis {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .text-body-primary {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+    }
+
+    .text-body-secondary {
+        color: #757575;
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+    }
+    
 
 /* Component Styling */
     button {
@@ -82,7 +144,7 @@
 
     .line-break {
         height: 1px;
-        background: rgb(226, 12, 180);
+        background: rgb(255, 255, 255);
         margin-top: 40px;
         margin-bottom: 40px;
     }
