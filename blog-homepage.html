@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Personal Blog Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <title>Playground</title>
+    <meta name="viewport" article="width=device-width, initial-scale=1">
+    <meta name="description" article="">
     <link rel="stylesheet" href="css/app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -17,76 +17,73 @@
             <a class="logo" href="blog-homepage.html">
                 <img src="assets/Logo - BLOGPLATFORM@1x.png" alt="BLOGPLATFORM. Logo">
             </a>
-                <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Write</a></li>
-                    <li><a href="#">Sign in</a></li>
+                <ul id="desktop-nav" class="nav-links">
+                    <li><a href="#">My</a></li>
+                    <li><a href="#">Nav</a></li>
+                    <li><a href="#">Links</a></li>
                 </ul>
             <a class="cta-small" href="#">Get Started</a>
         </nav>
 
             <main>
-                <h1>Howdy</h1>
-                <h3>Read and share ideas from independent voices, world-class publications, and experts from around the globe. Everyone's welcome is always welcome.</h3>
+                <h1 class="serif purple">Howdy.</h1>
+                <h5 class="serif paragraph">Welcome to my first attempt at building a website. Basically none of the links work, all the content is placeholder, and the code is quietly hacky. However, it’s fully responsive so at least that’s something!</h5>
                 <button>Get Started</button>
                 <div class="line-break"></div>
             </main>
 
             <section id="sidebar">
                 <img src="assets/headshot-square@2x.png" class="image" alt="Oliver Puttick Headshot">
-                <h6>ABOUT</h6>
-                <p class="text-body-primary">Product Designer @Seatfrog London, United Kingdom</p>
-                <div class="spacer-24"></div>
-                <p class="text-body-emphasis">Where to find me</p>
-                <div class="spacer-24"></div>
-                <div class="text-body-primary">
-                    <div>LinkedIn</div>
-                    <div class="spacer-24"></div>
-                    <div>Youtube</div>
-                    <div class="spacer-24"></div>
-                    <div>Goodreads</div>
-                    <div class="spacer-24"></div>
-                    <div>Spotify</div>
+                <h6 class="serif purple">ABOUT</h6>
+                <div>Oliver Puttick</div>
+                <div>Product Designer @Seatfrog</div>
+                <div>London, U.K.</div>
+                <div class="tablet-nav">
+                    <p><b>Where to find me</b></p>
+                    <div class="about">
+                        <div>LinkedIn</div>
+                        <div>Youtube</div>
+                        <div>Goodreads</div>
+                        <div>Spotify</div>
+                    </div>
                 </div>
+                <div class="line-break"></div>
             </section>
             
             <article id="article1" href="blog-post.html"> <!-- Blog Post Card -->
-                <p class="text-body-secondary">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
-                <h4>Design Matters 20 Questions the Very Nature of Reality</h4>
-                <h5>Why we stopped using them and how it improved the way we design</h5>
+                <p class="tiny grey">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
+                <h4 class="serif">Design Matters 20 Questions the Very Nature of Reality</h4>
+                <h5 id="article-subheader" class="serif grey">Why we stopped using them and how it improved the way we design</h5>
                 <img src="assets/01-blog@1x.png" class="image" alt="cover-photo">
             </article>
 
             <article id="article2" href="blog-post.html"> <!-- Blog Post Card -->
-                <p class="text-body-secondary">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
-                <h4>Design Matters 20 Questions the Very Nature of Reality</h4>
-                <h5>Why we stopped using them and how it improved the way we design</h5>
+                <p class="tiny grey">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
+                <h4 class="serif">Design Matters 20 Questions the Very Nature of Reality</h4>
+                <h5 id="article-subheader" class="serif grey">Why we stopped using them and how it improved the way we design</h5>
                 <img src="assets/02-blog@1x.png" class="image" alt="cover-photo">
             </article>
 
             <article id="article3" href="blog-post.html"> <!-- Blog Post Card -->
-                <p class="text-body-secondary">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
-                <h4>Design Matters 20 Questions the Very Nature of Reality</h4>
-                <h5>Why we stopped using them and how it improved the way we design</h5>
+                <p class="tiny">Oliver Puttick • 01 Jan, 2021 • 9 min read</p>
+                <h4 class="serif">Design Matters 20 Questions the Very Nature of Reality</h4>
+                <h5 id="article-subheader" class="serif grey">Why we stopped using them and how it improved the way we design</h5>
                 <img src="assets/03-blog@1x.png" class="image" alt="cover-photo">
             </article>
 
             <footer>
                 <div class="line-break"></div>
                 <div class="ft">
-                    <h3>Get my Newsletter in your inbox</h3>
-                    <p class="text-body-primary">Your email here</p>
-                    <div class="spacer-24"></div>
-                    <h2>SUBSCRIBE</h2>
+                    <h3 class="serif">Get my Newsletter in your inbox</h3>
+                    <p class="grey">Your email here</p>
+                    <h4 class="serif purple">SUBSCRIBE</h4>
+                    <div class="line-break"></div>
                 </div>
         
-                <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Write</a></li>
-                    <li><a href="#">Sign in</a></li>
-                    <div class="spacer-24"></div>
+                <ul class="nav-links about">
+                    <li><a href="#" class="serif">My</a></li>
+                    <li><a href="#" class="serif">Nav</a></li>
+                    <li><a href="#" class="serif">Links</a></li>
                 </ul>
             </footer>
     </div>
