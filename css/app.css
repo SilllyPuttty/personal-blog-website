@@ -5,7 +5,7 @@
     color: white;
     background-color: black;
     font-size: 16px;
-    line-height: 24px;
+    margin: 0;
 }
 
 /* Mobile Screens */
@@ -72,6 +72,7 @@ button {
     background-color: rgb(0, 0, 0);
     border: 1px solid white;
     color: white;
+    text-decoration: none;
 }
 
 .line-break {
@@ -81,11 +82,22 @@ button {
     margin-bottom: 4rem;
 }
 
+.line-break-small {
+    height: 1px;
+    border: 0.5px solid #757575;
+    width: 320px;
+    margin-bottom: 2rem;
+}
+
 .image {
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 5rem;
+}
+
+.headshot {
+    margin-bottom: 3rem;
 }
 
 .about div {
@@ -100,6 +112,8 @@ button {
 h1 {
     font-size: 2.5rem; 
     line-height: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -110,22 +124,44 @@ h2 {
 h3 {
     font-size: 2rem; 
     line-height: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 h4 {
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
     line-height: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+article h4 {
+    font-size: 1.25rem; 
+    line-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 h5 {
     font-size: 1.125rem; 
     line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+article h5 {
+    font-size: 1.125rem; 
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h6 {
     font-size: 0.75rem; 
     line-height: 1rem;
     font-weight: 900;
+}
+
+#sidebar h6 {
+    margin-bottom: 1rem; 
 }
 
 .small {
@@ -141,10 +177,19 @@ h6 {
 .tiny {
     font-size: 0.6875rem;
     line-height: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .serif {
     font-family: 'Merriweather', serif;
+}
+
+.bio {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
 }
 
 /* Tablet Screens */
@@ -153,6 +198,8 @@ h6 {
         gap: 15px;
         margin-left: 15px;
         margin-right: 15px;
+        max-width: 768px;
+        margin: auto;
     }
 
     #desktop-nav,
@@ -189,6 +236,14 @@ h6 {
     h4 {
         font-size: 1.5rem; 
         line-height: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+
+    article h4 {
+        font-size: 1.5rem; 
+        line-height: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     h5 {
@@ -225,6 +280,11 @@ h6 {
     
     nav {
         grid-column: col-start / span 12;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
     }
 
     #desktop-nav,
