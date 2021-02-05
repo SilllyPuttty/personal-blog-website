@@ -154,6 +154,7 @@ button:hover {
     border: 1px solid white;
     color: white;
     width: max-content;
+    list-style-type: none;
 }
 
 /* Typography */
