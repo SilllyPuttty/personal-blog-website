@@ -1,0 +1,17 @@
+@media print {
+    body {
+        font-family: Georgia, serif;
+        background: none;
+        color: black;
+    }
+
+    #header,  
+    #sidebar, 
+    #footer,
+    .desktop-nav,
+    .nav-links,
+    .cta-small,
+    button {
+        display: none;
+    }
+}

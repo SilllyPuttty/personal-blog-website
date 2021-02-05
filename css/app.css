@@ -1,3 +1,7 @@
+@import url(./normalize.css);
+@import url(./print.css);
+@import url(./utility.css);
+
 /* Universal Selector */
 * {
     box-sizing: border-box;
@@ -20,23 +24,6 @@
 #article-subheader { /* hide elsewhere */
         display: none;
     }   
-
-/* Colours */
-.purple {
-    color: #9547ff;
-}
-
-.grey {
-    color: #757575;
-}
-
-.white {
-    color: white;
-}
-
-.black {
-    color: black;
-} 
 
 /* Navigation */
 nav {
@@ -249,8 +236,8 @@ footer p {
 @media (min-width: 768px) {
     .container {
         gap: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: 768px;
         margin: auto;
     }
